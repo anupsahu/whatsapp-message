@@ -11,10 +11,9 @@
             </p>
             <form
               id="register-form"
-              role="form"
-              autocomplete="off"
+              [formGroup]="numberForm"
+              (ngSubmit)="onSubmit()"
               class="form"
-              method="post"
             >
               <div class="form-group">
                 <div class="input-group">
@@ -22,8 +21,7 @@
                     ><i class="glyphicon glyphicon-envelope color-blue"></i
                   ></span>
                   <input
-                    id="forgetAnswer"
-                    name="forgetAnswer"
+                    formControlName="mobile"
                     placeholder="Enter Mobile Number"
                     class="form-control"
                     type="number"
