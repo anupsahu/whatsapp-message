@@ -36,3 +36,8 @@ img {
 .forget-password .dropdown ul {
   width: 100%;
 }
+
+.center {
+  margin: 0 auto;
+  padding-top: 13vh;
+}
