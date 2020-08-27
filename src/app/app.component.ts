@@ -12,14 +12,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.numberForm = new FormGroup({
       mobile: new FormControl(null, [
-        Validators.pattern('[0-9]{0-10}'),
         Validators.required,
+        Validators.min(1000000000),
+        Validators.max(999999999999),
       ]),
     });
   }
 
   onSubmit() {
     console.log(this.numberForm);
-    window.open('https://wa.me/91' + this.numberForm.value.mobile);
+    window.open('https://wa.me/' + this.numberForm.value.mobile);
   }
 }
