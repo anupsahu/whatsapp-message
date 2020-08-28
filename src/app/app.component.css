@@ -10,7 +10,7 @@ body {
   margin-top: -27%;
 }
 .forget-password .panel-body {
-  padding: 15%;
+  padding: 9%;
   margin-bottom: -50%;
   background: #fff;
   border-radius: 5px;
@@ -18,8 +18,7 @@ body {
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 img {
-  width: 40%;
-  margin-bottom: 10%;
+  width: 33%;
 }
 .btnForget {
   background: #c0392b;
@@ -40,4 +39,15 @@ img {
 .center {
   margin: 0 auto;
   padding-top: 13vh;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: inherit;
+  color: #6c757dc2;
+  text-align: right;
+  padding-right: 25px;
 }
