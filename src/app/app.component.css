@@ -23,6 +23,7 @@ img {
 .btnForget {
   background: #c0392b;
   border: none;
+  width: 100%;
 }
 .forget-password .dropdown {
   width: 100%;
@@ -50,4 +51,8 @@ img {
   color: #6c757dc2;
   text-align: right;
   padding-right: 25px;
+}
+
+.form-control {
+  margin-bottom: 1rem;
 }

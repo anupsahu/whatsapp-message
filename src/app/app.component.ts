@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  numberForm: FormGroup;
+  numberForm: UntypedFormGroup;
   constructor(private http: HttpClient) {}
   countries = {
     BD: '880',
@@ -274,8 +274,8 @@ export class AppComponent implements OnInit {
         console.log('Detected Country Code - ' + this.countryCode);
       });
 
-    this.numberForm = new FormGroup({
-      mobile: new FormControl(null, [
+    this.numberForm = new UntypedFormGroup({
+      mobile: new UntypedFormControl(null, [
         Validators.required,
         Validators.min(1000000000),
         Validators.max(999999999999),
